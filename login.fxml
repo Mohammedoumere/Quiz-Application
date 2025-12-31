@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="500" prefWidth="350" spacing="15" stylesheets="@quiz.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.LoginController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label fx:id="titleLabel" styleClass="title-label" text="Sign In" />
+
+    <VBox fx:id="signUpBox" managed="false" spacing="10" visible="false">
+        <Label text="Username (Nickname)" />
+        <TextField fx:id="usernameSignUpField" promptText="Enter your nickname" />
+    </VBox>
+
+    <VBox spacing="5">
+        <Label text="Email (@gmail.com)" />
+        <TextField fx:id="emailField" promptText="Enter your email" />
+    </VBox>
+
+    <VBox spacing="5">
+        <Label text="Password" />
+        <StackPane>
+            <PasswordField fx:id="passwordField" promptText="Enter your password" />
+            <TextField fx:id="passwordTextField" managed="false" promptText="Enter your password" visible="false" />
+        </StackPane>
+        <CheckBox fx:id="showPasswordCheckBox" text="Show Password" />
+    </VBox>
+
+    <Button fx:id="actionButton" defaultButton="true" onAction="#handleAuthAction" text="Sign In" />
+
+    <HBox alignment="CENTER" spacing="5">
+        <Button fx:id="toggleButton" onAction="#toggleMode" text="Sign Up" />
+    </HBox>
+
+    <Label fx:id="statusLabel" styleClass="status-label" wrapText="true" />
+     <Label fx:id="toggleLabel" text="Don't have an account?" />
+</VBox>
