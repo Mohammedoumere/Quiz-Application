@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:controller="client.QuizController" 
+      xmlns:fx="http://javafx.com/fxml" 
+      spacing="20" 
+      alignment="CENTER"
+      style="-fx-background-color: #f0f0f0; -fx-padding: 30;">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <Label fx:id="questionLabel" 
+           text="Question will appear here" 
+           wrapText="true" 
+           style="-fx-font-size: 16pt; -fx-font-weight: bold;"/>
+    
+    <VBox spacing="10">
+        <Button fx:id="option1Btn" 
+                text="Option 1" 
+                onAction="#handleOption1" 
+                prefWidth="400" 
+                prefHeight="40"/>
+        <Button fx:id="option2Btn" 
+                text="Option 2" 
+                onAction="#handleOption2" 
+                prefWidth="400" 
+                prefHeight="40"/>
+        <Button fx:id="option3Btn" 
+                text="Option 3" 
+                onAction="#handleOption3" 
+                prefWidth="400" 
+                prefHeight="40"/>
+        <Button fx:id="option4Btn" 
+                text="Option 4" 
+                onAction="#handleOption4" 
+                prefWidth="400" 
+                prefHeight="40"/>
+    </VBox>
+    
+    <HBox spacing="20" alignment="CENTER">
+        <Label fx:id="scoreLabel" 
+               text="Score: 0/0" 
+               style="-fx-font-size: 14pt; -fx-text-fill: #333;"/>
+    </HBox>
+    
+    <Label fx:id="statusLabel" 
+           text="Status: Ready" 
+           wrapText="true" 
+           style="-fx-font-size: 12pt; -fx-text-fill: #666;"/>
+    
+</VBox>
