@@ -1,0 +1,211 @@
+/* --- Light Theme --- */
+
+/* --- Base and Background Styles --- */
+.root {
+    -fx-background-color: #F0F4F8; /* Cool, light grey */
+}
+
+.main-app-background {
+    -fx-background-color: #F0F4F8;
+}
+
+.left-sidebar {
+    -fx-background-color: #FFFFFF; /* White */
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 2, 0);
+}
+
+/* --- Typography --- */
+.label {
+    -fx-text-fill: #2C3E50; /* Dark Blue/Grey Text */
+}
+
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+.question-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-padding: 20px;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12px;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 10, 0, 0, 2);
+}
+
+.score-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+.status-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #E74C3C; /* Red for errors */
+    -fx-font-style: italic;
+}
+
+/* --- Buttons --- */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #3498DB; /* Bright Blue */
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980B9; /* Darker Blue */
+}
+
+.option-button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-border-color: #BDC3C7;
+    -fx-border-width: 1px;
+}
+
+.option-button:hover {
+    -fx-background-color: #ECF0F1;
+    -fx-border-color: #3498DB;
+}
+
+.option-button.correct {
+    -fx-background-color: #2ECC71;
+    -fx-text-fill: white;
+    -fx-border-color: #27AE60;
+}
+
+.option-button.incorrect {
+    -fx-background-color: #E74C3C;
+    -fx-text-fill: white;
+    -fx-border-color: #C0392B;
+}
+
+.control-button {
+    -fx-background-color: #E74C3C; /* Red */
+}
+
+.control-button:hover {
+    -fx-background-color: #C0392B;
+}
+
+/* --- Navigation --- */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #555555;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 15px;
+    -fx-background-radius: 5px;
+    -fx-max-width: Infinity;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.nav-button:hover {
+    -fx-background-color: #E8EDF2;
+    -fx-text-fill: #3498DB;
+}
+
+/* --- Profile --- */
+.profile-container {
+    -fx-background-color: transparent;
+}
+
+.profile-picture-clip {
+    -fx-fill: #ECF0F1;
+    -fx-stroke: #3498DB;
+    -fx-stroke-width: 3px;
+}
+
+.profile-label-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7F8C8D;
+}
+
+.profile-label-value {
+    -fx-font-size: 18px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+/* --- Other Controls --- */
+.text-field, .password-field {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #95A5A6;
+    -fx-background-radius: 5px;
+    -fx-border-color: #BDC3C7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #3498DB;
+}
+
+.check-box .box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #BDC3C7;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #3498DB;
+}
+
+.list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #DDE2E6;
+    -fx-border-radius: 5px;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+    -fx-padding: 15px;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #E8EDF2;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #3498DB;
+    -fx-text-fill: white;
+}
+
+.link-style {
+    -fx-text-fill: #3498DB;
+    -fx-border-color: transparent;
+    -fx-underline: false;
+}
+
+.link-style:hover {
+    -fx-underline: true;
+}
+
+/* --- Answer Status --- */
+.answer-status-label.correct {
+    -fx-background-color: #2ECC71;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+}
+
+.answer-status-label.incorrect {
+    -fx-background-color: #E74C3C;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+}
