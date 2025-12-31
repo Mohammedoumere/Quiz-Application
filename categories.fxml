@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" stylesheets="@quiz.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.CategoriesController">
+
+    <!-- Courses Column -->
+    <VBox spacing="5" alignment="CENTER" HBox.hgrow="ALWAYS">
+        <Label text="Courses" styleClass="title-label" />
+        <ListView fx:id="courseListView" VBox.vgrow="ALWAYS" />
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Add Course" onAction="#handleAddCourse" />
+            <Button text="Delete Course" onAction="#handleDeleteCourse" />
+        </HBox>
+    </VBox>
+
+    <!-- Files Column -->
+    <VBox spacing="5" alignment="CENTER" HBox.hgrow="ALWAYS">
+        <Label text="Course Files" styleClass="title-label" />
+        <ListView fx:id="fileListView" VBox.vgrow="ALWAYS" />
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="addFileButton" text="Add File(s)" onAction="#handleAddFiles" disable="true" />
+            <Button fx:id="deleteFileButton" text="Delete File" onAction="#handleDeleteFile" disable="true" />
+        </HBox>
+    </VBox>
+
+</HBox>
