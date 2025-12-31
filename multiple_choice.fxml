@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="1089.0" spacing="15" stylesheets="@quiz.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.MultipleChoiceController">
+    <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+
+    <Label fx:id="titleLabel" styleClass="title-label" text="Quiz Challenge" />
+    <Label fx:id="questionLabel" prefHeight="128.0" prefWidth="994.0" styleClass="question-label" wrapText="true" />
+
+    <VBox fx:id="optionsBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="659.0" spacing="10">
+        <Button fx:id="option1Btn" maxWidth="Infinity" onAction="#handleOption1" styleClass="option-button" text="Option 1" />
+        <Button fx:id="option2Btn" maxWidth="Infinity" onAction="#handleOption2" styleClass="option-button" text="Option 2" />
+        <Button fx:id="option3Btn" maxWidth="Infinity" onAction="#handleOption3" styleClass="option-button" text="Option 3" />
+        <Button fx:id="option4Btn" maxWidth="Infinity" onAction="#handleOption4" styleClass="option-button" text="Option 4" />
+    </VBox>
+
+    <Label fx:id="answerStatusLabel" visible="false" />
+    <Label fx:id="scoreLabel" styleClass="score-label" text="Score: 0/0" />
+    <Label fx:id="statusLabel" styleClass="status-label" text="Loading..." wrapText="true" />
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="skipBtn" onAction="#handleSkip" styleClass="control-button" text="Skip" />
+        <Button fx:id="nextBtn" onAction="#handleNext" styleClass="control-button" text="Next" />
+        <Button fx:id="exitBtn" onAction="#handleExit" styleClass="control-button" text="Exit" />
+    </HBox>
+</VBox>
