@@ -64,3 +64,14 @@ Once the server is up:
 *   **Java RMI**: For Client-Server communication.
 *   **Apache POI**: For parsing Word (.docx) and PowerPoint (.pptx) files.
 *   **Apache PDFBox**: For parsing PDF files.
+  ## Output 
+  <img width="1920" height="1080" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/b8a15401-49f2-41a4-ad3c-f1caa22e6f53" />
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/b13d875e-abc8-45d0-b366-26442da90440" />
+<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/8f0f7e42-ecd4-4004-bd26-3b04b5e8e455" />
+<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/f6e0d83e-a892-4fab-8223-09c0e8d02344" />
+****<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/550d546a-92c0-4580-a4cc-5cff91a458df" />
+<img width="1920" height="1080" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/b14e0a3c-868e-432d-ab30-63515afa5af7" />
+
+
+
+
